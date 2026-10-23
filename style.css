@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100d14;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #20172a;
+    border-bottom: 2px solid #a855f7;
+}
+
+header h1 {
+    color: #d8a4ff;
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+main {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.chapter-title {
+    color: #d8a4ff;
+    margin-bottom: 25px;
+}
+
+.comic-container {
+    max-width: 850px;
+    margin: auto;
+    background: #211a29;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #542a70;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    background: #17121e;
+}
+
+.slide img {
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    display: block;
+}
+
+/* STORY CONTENT BELOW IMAGE */
+
+.story-content {
+    padding: 25px;
+    text-align: left;
+    background: #2a2035;
+    border-top: 2px solid #a855f7;
+}
+
+.story-content h2 {
+    color: #d8a4ff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.story-content p {
+    color: #eeeeee;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* SLIDER BUTTONS */
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #9146c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #bd79eb;
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+/* DOTS */
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #777;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #d8a4ff;
+}
+
+/* SLIDE NUMBER */
+
+#slideNumber {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #20172a;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .slide img {
+        height: 280px;
+    }
+
+    .story-content h2 {
+        font-size: 19px;
+    }
+
+    .story-content p {
+        font-size: 15px;
+    }
+
+    .slider-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
